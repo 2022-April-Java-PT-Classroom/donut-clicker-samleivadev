@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    font-family: "Saira Extra Condensed","sans-serif";
+    margin: px;
+    padding: 0;
+    color:#405077
+
+}
+
+header h1{
+    color: #f56200;
+}
+.fa-solid{
+    color:#db0a81;
+    font-size: 150%;
+}
+
