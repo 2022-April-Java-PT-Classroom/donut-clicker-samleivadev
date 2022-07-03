@@ -4,24 +4,28 @@ class DonutMaker {
         this.numDonuts = numDonuts;
         this.numAutoClickers = numAutoClickers;
         this.autoClickerCost = autoClickerCost;
+
       
     }
     
     addDonut(){
-        this.numDonuts +=1;
+        this.numDonuts =this.numAutoClickers + 1
     }
 
-   
-
     addAutoClicker(){
-        if(this.numDonuts >=100){
-            this.numDonuts -=100;
+        if(this.numDonuts >=this.autoClickerCost){
+            this.numDonuts -=this.autoClickerCost;
             this.numAutoClickers +=1;
         }
         if(this.addAutoClicker >1){
             this.autoClickerCost = this.autoClickerCost*1.1
         }
-        
+
+               
+    }
+
+    addMultiplier(){
+
     }
 
     

@@ -5,13 +5,13 @@ import DonutMaker from './DonutMaker';
 describe('DonutMaker',() =>{
 
     test('Add one donuts when click Add a donuts and retrive total count', () =>{
-        const underTest = new DonutMaker(0);
+        const underTest = new DonutMaker(0,0,0);
         underTest.addDonut();
         expect(underTest.numDonuts).toEqual(1);
       })
 
       test('Able to add autoclicker when donuts are 100 donuts', () =>{
-        const underTest = new DonutMaker(100, 0);
+        const underTest = new DonutMaker(100, 0, 100);
         underTest.addAutoClicker();
         expect(underTest.numDonuts).toEqual(0);
         expect(underTest.numAutoClickers).toEqual(1);
@@ -40,8 +40,21 @@ describe('DonutMaker',() =>{
         
       })
 
-
+    test ('The amount of auto clicker affects the amount of donuts added', () =>{
+      const underTest = new DonutMaker(0, 3, 121);
+      underTest.addDonut();
+      expect(underTest.numDonuts).toEqual(4);
     })
+    
+
+      
+    })
+
+// describe('Donut Multiplier',() =>{
+
+//   test ()
+
+//     })
 
 
  
