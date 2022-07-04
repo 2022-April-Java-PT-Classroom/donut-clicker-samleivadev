@@ -10,6 +10,18 @@ describe('DonutMaker',() =>{
         expect(underTest.numDonuts).toEqual(1);
       })
 
+      test('Retrive total donuts', () =>{
+        const underTest = new DonutMaker(100,0,0);
+        underTest.getTotalDonuts();
+        expect(underTest.numDonuts).toEqual(100);
+      })
+      
+      test('Retrive total number of Autoclicks', () =>{
+        const underTest = new DonutMaker(100, 4, 100, 2, 1000);
+        underTest.getTotalAutoClicks();
+        expect(underTest.numAutoClickers).toEqual(4);
+      })
+
       test('Able to add autoclicker when donuts are 100 donuts', () =>{
         const underTest = new DonutMaker(100, 0, 100);
         underTest.addAutoClicker();
@@ -50,11 +62,22 @@ describe('DonutMaker',() =>{
       
     })
 
-// describe('Donut Multiplier',() =>{
+  test ('Should retrive the multiplier count', () =>{
+    const underTest = new DonutMaker(100, 0, 100, 2, 1000);
+    underTest.getTotalMultipliers();
+    expect(underTest.numMultipliers).toEqual(2);
+    
 
-//   test ()
+  })
 
-//     })
+  test('Able to add donut Multiplier when donuts are 1000 donuts', () =>{
+    const underTest = new DonutMaker(1000, 0, 100, 0, 1000);
+    underTest.addDonutMultiplier()
+    expect(underTest.numDonuts).toEqual(0);
+    expect(underTest.numMultipliers).toEqual(1);
+  })
+
+
 
 
  
