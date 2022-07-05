@@ -1,17 +1,64 @@
-* {
+*{
     box-sizing: border-box;
-    font-family: "Saira Extra Condensed","sans-serif";
-    margin: px;
-    padding: 0;
-    color:#405077
-
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 20px;
+    background-color: rgb(247, 247, 247);
+}
+.gameboard{
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: flex;
+   
 }
 
-header h1{
-    color: #f56200;
+
+.gameboard .navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 15%;
+    margin-top: 10px;
+    
 }
-.fa-solid{
+.gameboard .navigation .fa-solid{
+    width: 50px;
+    font-size: 150px;
     color:#db0a81;
-    font-size: 150%;
+    height: 50px;
+  
 }
+.gameboard .main{
+    width: 70%;
+}
+
+.gameboard .main .title{
+    margin-bottom: 30px;
+}
+.gameboard .main .title h1{
+    color: #f56200;
+    font-size: 30px;
+    line-height: 0px;
+}
+.gameboard .main .title{
+    margin-top: 40px;
+}
+.gameboard .main .title label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+}
+.gameboard .main .title select{
+    border: none;
+    font-size: 16px;
+    background-color: rgba( 0 0 0 / 0);
+}
+
+.gameboard .results {
+    background-color: yellow;
+}
+
+
 

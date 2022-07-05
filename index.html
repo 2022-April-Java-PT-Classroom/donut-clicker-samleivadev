@@ -9,19 +9,43 @@
     <script src="https://kit.fontawesome.com/fe218fcd2e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <header>
-      <h1>SL Project</h1>
-      <i class="fa-solid fa-gamepad"></i><h2>Donuts Clicker Game</h2>
-    </header>
-    <div class="container">
-      <div id="total">0</div>
-      <button class="addOne" onclick="incrementDonutsByOne">Make one Donut</button>
-      
-      
+    <div class="gameboard">
+      <div class="navigation">
+        <i class="fa-solid fa-cookie"></i>
+        <button class="addOne" onclick="incrementDonutsByOne">Make one Donut</button>
+        <button class="addAutoClicker" onclick="incrementDonutsByOne">Add Auto Clicker</button>
+        <button class="addMultiplier" onclick="incrementDonutsByOne">Add Multiplier</button>
+
+        
+
+      </div>
+      <div class="main">
+        <div class="title">
+          <h1>Donut Clicker Game</h1>
+        </div>
+        <div class="container">
+          <h2>Playing Hard</h2>
+          <div id="numDonuts">0</div>
+          <div id="numAutoClikers">0</div>
+          <div id="numMultipliers">0</div>
+        </div>
+        <div class="costs">
+          <h2>Check the cost</h2>
+          <div id="valuePerClick">0</div>
+          <div id="costAutoclicker">0</div>
+          <div id="costMultiplier">0</div>
+        </div>
 
 
+      </div>
+      <div class="results">
+        <h2>Results</h2>
+          <div id="valuePerClick">0</div>
+          <div id="costAutoclicker">0</div>
+          <div id="costMultiplier">0</div>
+      </div>
     </div>
-
+   
 
     <script src="./index.js"></script>
   </body>

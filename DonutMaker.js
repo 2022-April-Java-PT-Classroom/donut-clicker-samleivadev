@@ -56,6 +56,8 @@ class DonutMaker {
         this.numDonuts = this.numDonuts*1.2**this.numMultipliers
     }
 
+    increaseValueOfAuticlicker
+
     getMultiplierCost(){
         return this.multiplierCost 
         }
