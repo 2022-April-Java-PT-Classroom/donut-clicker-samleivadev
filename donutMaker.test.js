@@ -5,10 +5,15 @@ import DonutMaker from './DonutMaker';
 describe('DonutMaker',() =>{
 
     test('Add one donuts when click Add a donuts and retrive total count', () =>{
-        const underTest = new DonutMaker(0,0,0);
+        const underTest = new DonutMaker(0,0,0,0,0,1);
         underTest.addDonut();
         expect(underTest.numDonuts).toEqual(1);
       })
+    test('Add one donuts when click Add a donuts and autoclick is running retrive total count', () =>{
+      const underTest = new DonutMaker(0,2,0,0,0,1);
+      underTest.addDonut();
+      expect(underTest.numDonuts).toEqual(3);
+      })   
 
       test('Retrive total donuts', () =>{
         const underTest = new DonutMaker(100,0,0);
@@ -53,17 +58,13 @@ describe('DonutMaker',() =>{
       })
 
     test ('The amount of auto clicker affects the amount of donuts added', () =>{
-      const underTest = new DonutMaker(0, 3, 121);
+      const underTest = new DonutMaker(0, 3, 121,0,0,1);
       underTest.addDonut();
       expect(underTest.numDonuts).toEqual(4);
     })
-    
-
-      
-    })
 
   test ('Should retrive the multiplier count', () =>{
-    const underTest = new DonutMaker(100, 0, 100, 2, 1000);
+    const underTest = new DonutMaker(100, 0, 100, 2, 1000,1);
     underTest.getTotalMultipliers();
     expect(underTest.numMultipliers).toEqual(2);
     
@@ -71,13 +72,17 @@ describe('DonutMaker',() =>{
   })
 
   test('Able to add donut Multiplier when donuts are 1000 donuts', () =>{
-    const underTest = new DonutMaker(1000, 0, 100, 0, 1000);
+    const underTest = new DonutMaker(1000, 0, 100, 0, 1000,1);
     underTest.addDonutMultiplier()
     expect(underTest.numDonuts).toEqual(0);
     expect(underTest.numMultipliers).toEqual(1);
   })
 
+  test('increase the click value multiplier to 1.2 to the xth power(x = amount of Donut multipliers count)', () =>{
+    const underTest = new DonutMaker(2, 1, 10, 2, 10,1);
+    underTest.increaseNumberOfDonutsWithMultiplier();
+    expect(underTest.numDonuts).toEqual(2.88);
+    
+  })
 
-
-
- 
+})
