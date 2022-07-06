@@ -18,13 +18,13 @@ function runGame(){
     
 
     startBtn.addEventListener('click',()=> {
-        const createUser = new DonutMaker(nameInput.value, 0,0,0,0,0);
+        const createUser = new DonutMaker(nameInput.value, 0,0,10,0,100);
         const userName = document.querySelector('#userName')
         const userInforPara = document.createElement('p');
         
 
-        userInforPara.innerText = 'Gamer: ' +createUser.user + ' Total Donuts: '+createUser.numDonuts+ ' Total Autoclikers: '+createUser.numAutoClickers+
-        ' Cost Autoclickers: '+createUser.autoClickerCost+ ' Total Multipliers: '+ createUser.numMultipliers+
+        userInforPara.innerText = 'Gamer: ' +createUser.user + 
+        ' Cost Autoclickers: '+createUser.autoClickerCost+
         ' Cost Multiplier: '+createUser.multiplierCost
 
         userName.appendChild(userInforPara);
@@ -35,6 +35,7 @@ function runGame(){
         const numAutoClickers = document.querySelector('#numAutoClikers')
         const numMultipliers = document.querySelector('#numMultipliers') 
         const multiplierBtn = document.querySelector('#addMultiplierBtn')
+        const autoClickerCost = document.querySelector('#costAutoclicker')
 
         const updateDonutCount = (numDonuts, createUser) =>{
             numDonuts.textContent = Math.round(createUser.getTotalDonuts())
@@ -43,6 +44,7 @@ function runGame(){
         const updateAutoClickerCount = (numAutoClickers, createUser) => {
             numAutoClickers.textContent = Math.round(createUser.getTotalAutoClicks())
           }
+       
         
         const updateMultiplierCount = (numMultipliers, createUser) => {
             numMultipliers.textContent = Math.round(createUser.getTotalMultipliers())
@@ -58,18 +60,17 @@ function runGame(){
         const makeAutoclickerBtn = (autoClickerBtn, numDonuts, numAutoClickers, createUser)
             autoClickerBtn.addEventListener('click',()=>{
                 createUser.addAutoClicker()
-                //updateDonutCount(numDonuts,createUser)
+                updateDonutCount(numDonuts,createUser)
                 updateAutoClickerCount(numAutoClickers, createUser)
             })
 
         const makeMultiplierBtn = (multiplierBtn, numDonuts, numMultipliers, createUser)
             multiplierBtn.addEventListener('click',()=>{
                 createUser.addDonutMultiplier()
-                //updateDonutCount(numDonuts,createUser)
+                updateDonutCount(numDonuts,createUser)
                 updateMultiplierCount(numMultipliers, createUser)
-            })
-
-        })      
+            })      
        
   
+        })
     }

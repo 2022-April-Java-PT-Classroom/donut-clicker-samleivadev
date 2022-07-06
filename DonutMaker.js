@@ -12,7 +12,7 @@ class DonutMaker {
     }
     
     addDonut(){
-        this.numDonuts =this.numDonuts + this.numAutoClickers + this.userClick;
+        this.numDonuts =this.numDonuts + this.numAutoClickers+ this.userClick;
     }
 
     getTotalDonuts(){
@@ -32,6 +32,7 @@ class DonutMaker {
             this.autoClickerCost = this.autoClickerCost*1.1
         }                
         }
+   
 
     runAutoClicker(){
         if(this.numAutoClickers >=1){

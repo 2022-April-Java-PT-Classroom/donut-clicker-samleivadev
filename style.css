@@ -30,7 +30,6 @@ span{
 .gameboard .navigation{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border: #f56200;
     border-style: solid;
     border-radius: 15px;
@@ -42,11 +41,33 @@ span{
     
 }
 .gameboard .navigation .fa-solid{
-    width: 50px;
-    font-size: 150px;
+    align-self: center;
+    padding-top: 15px;
+    font-size: 100px;
     color:#db0a81;
-    height: 50px;
+    padding-bottom: 25px;
+    
   
+}
+
+.gameboard .main .numbers{
+    display: flex;
+    color: #db0a81;
+    justify-content: space-around;
+    font-size: 200%;
+    border: #db0a81;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.gameboard .main .costs{
+    display: flex;
+    color: #db0a81;
+    justify-content: space-around;
+    font-size: 200%;
+    border: #db0a81;
+    border-style: solid;
+    border-radius: 15px;
 }
 
 .gameboard .navigation p{
@@ -68,27 +89,25 @@ span{
 
 .gameboard .main .title{
     margin-bottom: 30px;
+    color: #db0a81;
 }
-.gameboard .main .title h1{
-    color: #f56200;
-    font-size: 30px;
-    line-height: 0px;
-}
+
 .gameboard .main .title{
     margin-top: 40px;
+    color: #db0a81;
 }
-.gameboard .main .title label{
+/* .gameboard .main .numbers{
     margin-right: 15px;
     color: #727272;
     font-size: 16px;
-}
-.gameboard .main .title select{
+} */
+/* .gameboard .main .title select{
     border: none;
     font-size: 16px;
     background-color: rgba( 0 0 0 / 0);
-}
+} */ 
 
-.gameboard .results {
+.gameboard .scores {
     
     border: #f56200;
     border-style: solid;
@@ -98,6 +117,13 @@ span{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
+}
+
+.gameboard .scores {
+    
+    color: #f56200;
+    justify-content: space-around;
+    font-size: 150%;
 }
 
 footer{
