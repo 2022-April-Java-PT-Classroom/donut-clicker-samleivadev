@@ -22,9 +22,13 @@
 
         <p>Time to have fun!</p>
 
-        <button class="addDonutBtn">Make one Donut</button>
-        <button class="addAutoClickerBtn" >Add Auto Clicker</button>
-        <button class="addMultiplierBtn" >Add Multiplier</button>
+        <div class="controls">
+          <button id="addDonutBtn">Make one Donut</button>
+          <button id="addAutoClickerBtn" >Add Auto Clicker</button>
+          <button id="addMultiplierBtn" >Add Multiplier</button>
+        </div>
+
+        
 
 
       </div>
@@ -33,14 +37,16 @@
           <h1>Donut Clicker Game</h1>
         </div>
         <div class="container">
-          <h2>Gamer:</h2>
-          <div class="userName">
-
+          
+          <div class="user">
+            <h1 id="userName"></h1>
           </div>
 
-          <div id="numDonuts"></div>
-          <div id="numAutoClikers"></div>
-          <div id="numMultipliers"></div>
+          <div class="numbers"></div>
+
+          <h2 id="numDonuts"></h2>
+          <h2 id="numAutoClikers"></h2>
+          <h2 id="numMultipliers"></h2>
         </div>
         <div class="costs">
           <h2>Check the cost</h2>

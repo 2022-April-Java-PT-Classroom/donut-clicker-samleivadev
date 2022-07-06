@@ -1,6 +1,7 @@
 class DonutMaker {
 
-    constructor (numDonuts, numAutoClickers, autoClickerCost, numMultipliers, multiplierCost, userClick){
+    constructor (user, numDonuts, numAutoClickers, autoClickerCost, numMultipliers, multiplierCost, userClick){
+        this.user=user;
         this.numDonuts = numDonuts;
         this.numAutoClickers = numAutoClickers;
         this.autoClickerCost = autoClickerCost;
@@ -11,7 +12,7 @@ class DonutMaker {
     }
     
     addDonut(){
-        this.numDonuts =this.numAutoClickers + this.userClick;
+        this.numDonuts =this.numDonuts + this.numAutoClickers + this.userClick;
     }
 
     getTotalDonuts(){
@@ -56,8 +57,7 @@ class DonutMaker {
         this.numDonuts = this.numDonuts*1.2**this.numMultipliers
     }
 
-    increaseValueOfAuticlicker
-
+    
     getMultiplierCost(){
         return this.multiplierCost 
         }
