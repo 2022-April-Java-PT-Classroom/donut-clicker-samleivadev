@@ -4,11 +4,10 @@
 }
 body{
     margin: 20px;
-    background-color: rgb(247, 247, 247);
+    background-color:white;
 }
 
 header {
-    background-color: white;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #f56200;
@@ -109,5 +108,25 @@ footer{
     background-color: #51042f;
 }
 
+
+
+footer .social .fa-github{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+footer .social .fa-github:hover{
+    color: #daa7c4;
+}
+
+footer .social .fa-linkedin{
+    
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+footer .social .fa-linkedin:hover{
+    color:aqua
+}
 
 

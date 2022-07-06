@@ -16,12 +16,16 @@
       <div class="navigation">
         <i class="fa-solid fa-cookie"></i>
 
-        <p>Time to have fun!</p>
-        <button class="addOne" onclick="incrementDonutsByOne">Make one Donut</button>
-        <button class="addAutoClicker" onclick="incrementDonutsByOne">Add Auto Clicker</button>
-        <button class="addMultiplier" onclick="incrementDonutsByOne">Add Multiplier</button>
+        <p></p>
+        <input tye="text" id="name" placeholder="Enter Your Gamer Name">
+        <button id="start">Start</button>
 
-        
+        <p>Time to have fun!</p>
+
+        <button class="addDonutBtn">Make one Donut</button>
+        <button class="addAutoClickerBtn" >Add Auto Clicker</button>
+        <button class="addMultiplierBtn" >Add Multiplier</button>
+
 
       </div>
       <div class="main">
@@ -29,16 +33,21 @@
           <h1>Donut Clicker Game</h1>
         </div>
         <div class="container">
-          <h2>Playing Hard</h2>
-          <div id="numDonuts">0</div>
-          <div id="numAutoClikers">0</div>
-          <div id="numMultipliers">0</div>
+          <h2>Gamer:</h2>
+          <div class="userName">
+
+          </div>
+
+          <div id="numDonuts"></div>
+          <div id="numAutoClikers"></div>
+          <div id="numMultipliers"></div>
         </div>
         <div class="costs">
           <h2>Check the cost</h2>
-          <div id="valuePerClick">0</div>
-          <div id="costAutoclicker">0</div>
-          <div id="costMultiplier">0</div>
+          <div id="acCost"></div>
+          <div id="valuePerClick"></div>
+          <div id="costAutoclicker"></div>
+          <div id="costMultiplier"></div>
         </div>
 
 
