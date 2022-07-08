@@ -43,6 +43,7 @@ function runGame(){
         const numMultipliers = document.querySelector('#numMultipliers') 
         const multiplierBtn = document.querySelector('#addMultiplierBtn')
         const multipliersCost = document.querySelector('#costMultiplier')
+        const userClick = document.querySelector('#valueperclick')
 
         const updateDonutCount = (numDonuts, createUser) =>{
             numDonuts.textContent = Math.round(createUser.getTotalDonuts())
@@ -63,7 +64,11 @@ function runGame(){
         
         const updateMultiplierCost = (multiplierCost, createUser) => {
             multiplierCost.textContent = Math.round(createUser.getMultiplierCost())
-          }          
+          }  
+          
+        const updateValuePerClick = (userClick, createUser) =>{
+            userClick.textContent = Math.round(createUser.calculateValuePerClick())
+        }  
 
          
         const makeResetBtn=(createUser)
@@ -94,6 +99,10 @@ function runGame(){
                 updateDonutCount(numDonuts,createUser)
                 updateMultiplierCount(numMultipliers, createUser)
             })
+
+        const valueForEachClick = (userClick, createUser)  
+            createUser.calculatingValuePerClick()
+            updateValuePerClick(userClick, createUser)
 
         const costsForAutoClickers = (numAutoClickers, createUser)
             createUser.getCostAutoClicker()

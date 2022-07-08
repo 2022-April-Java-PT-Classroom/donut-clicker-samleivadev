@@ -15,6 +15,11 @@ class DonutMaker {
         this.numDonuts =this.numDonuts + this.numAutoClickers+ this.numMultipliers+this.userClick;
     }
 
+    calculatingValuePerClick(){
+        this.userClick = this.numAutoClickers + this.numMultipliers + this.userClick
+    }
+
+
     getTotalDonuts(){
         
         return this.numDonuts

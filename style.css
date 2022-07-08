@@ -50,6 +50,68 @@ span{
   
 }
 
+.gameboard .navigation #start {
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  /* text-decoration: none; */
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.gameboard .navigation #name{
+    padding: 10px 40px;
+    margin-bottom: 15px;
+}
+
+.gameboard .navigation #reset {
+    background-color: red; 
+    border: none;#4CAF50;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.gameboard .navigation .controls #addDonutBtn {
+    background-color: #db0a81; 
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+.gameboard .navigation .controls #addAutoClickerBtn {
+    background-color: #db0a81; 
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.gameboard .navigation .controls #addMultiplierBtn {
+    background-color: #db0a81; 
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 .gameboard .main .numbers{
     display: flex;
     color: #db0a81;
@@ -151,13 +213,20 @@ span{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-}
-
-.gameboard .scores {
-    
-    color: #f56200;
     justify-content: space-around;
     font-size: 150%;
+}
+
+.gameboard .scores #levelstatus {
+    font-size: 100px;
+    font-weight: 600;
+    
+}
+
+.gameboard .scores p {
+   color:#cf82ae;
+   font-size: 20px;
+   font-weight: 600;
 }
 
 footer{
