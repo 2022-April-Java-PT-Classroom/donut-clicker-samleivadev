@@ -19,6 +19,7 @@
         <p></p>
         <input tye="text" id="name" placeholder="Enter Your Gamer Name">
         <button id="start">Start</button>
+        <button id="reset">Reset</button>
 
         <h2>Controls</h2>
 
@@ -43,18 +44,33 @@
           </div>
 
           <div class="numbers">
-
-            <section id="numDonuts">0</section>
-            <section id="numAutoClikers">0</section>
-            <section id="numMultipliers">0</section>
+            <div>
+              <p>Total Donuts</p>
+              <section id="numDonuts">0</section>
+            </div>
+            <div>
+              <p>Total AutoClicks</p>
+              <section id="numAutoClikers">0</section>
+            </div>
+            <div>
+              <p>Total Multipliers</p>
+              <section id="numMultipliers">0</section>
+            </div>
+            
           </div>
         </div>
         <h2>Purchase Options:</h2>
         <div class="costs">
-          <!-- <div id="acCost">0</div> -->
-          <div id="valuePerClick">1</div>
-          <div id="costAutoclicker">0</div>
-          <div id="costMultiplier">0</div>
+          <div>
+            <p>Autoclicker cost:</p>
+            <section id="costAutoclicker">0</section>
+          </div>
+          <div>
+            <p>Multiplier Cost:</p>
+            <section id="costMultiplier">0</section>
+          </div>
+          
+          
         </div>
 
 
@@ -62,7 +78,8 @@
       <div class="scores">
         <h2>Level</h2>
           <div id="levelstatus">1</div>
-          
+          <div class="valueperclick"></div>
+          <div class="expovalue"></div>
       </div>
     </div>
    

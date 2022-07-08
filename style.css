@@ -62,17 +62,51 @@ span{
 
 .gameboard .main .costs{
     display: flex;
-    color: #db0a81;
     justify-content: space-around;
     font-size: 200%;
     border: #db0a81;
     border-style: solid;
     border-radius: 15px;
+    font-size: 20PX;
+    
 }
 
 .gameboard .navigation p{
     margin-top: auto;
     text-align: center;
+}
+.gameboard .main .numbers p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #db0a81;
+}
+
+.gameboard .main .numbers #numDonuts{
+    font-size: 50px;
+    font-weight: 600;
+        
+}
+
+.gameboard .main .numbers #numAutoClikers{
+    font-size: 50px;
+    font-weight: 600;
+        
+}
+
+.gameboard .main .numbers #numMultipliers{
+    font-size: 50px;
+    font-weight: 600;
+        
+}
+
+.gameboard .main .costs #costAutoclicker{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.gameboard .main .costs #costMultiplier{
+    font-size: 40px;
+    font-weight: 600;
 }
 
 .gameboard .main{

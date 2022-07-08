@@ -12,10 +12,11 @@ class DonutMaker {
     }
     
     addDonut(){
-        this.numDonuts =this.numDonuts + this.numAutoClickers+ this.userClick;
+        this.numDonuts =this.numDonuts + this.numAutoClickers+ this.numMultipliers+this.userClick;
     }
 
     getTotalDonuts(){
+        
         return this.numDonuts
     }
 
@@ -27,40 +28,62 @@ class DonutMaker {
         if(this.numDonuts >=this.autoClickerCost){
             this.numDonuts -=this.autoClickerCost;
             this.numAutoClickers ++;
+            this.increaseAutoClickerCost()
         }
-        if(this.addAutoClicker >1){
-            this.autoClickerCost = this.autoClickerCost*1.1
-        }                
+    }
+    increaseAutoClickerCost() {
+            this.autoClickerCost = this.autoClickerCost*1.1       
         }
-   
+    
+    addDonutMultiplier(){
+        if(this.numDonuts >=this.multiplierCost){
+            this.numDonuts -=this.multiplierCost;
+            this.numMultipliers ++;
+            this.increaseMultiplierCost()
+            this.increaseNumberOfDonutsWithMultiplier()
+                
+            }
+        }
+    
+    increaseMultiplierCost() {
+        this.multiplierCost = this.multiplierCost*1.1
+        }  
+    increaseNumberOfDonutsWithMultiplier(){
+        this.numDonuts = this.numDonuts*1.2**this.numMultipliers
+        }            
+    
 
+
+
+    getCostAutoClicker (){
+        return this.autoClickerCost*1.1
+    }
+
+        
     runAutoClicker(){
         if(this.numAutoClickers >=1){
-        this.userClick ++;
+        this.numDonuts =this.numDonuts + this.autoClickerCost*1;
         }
-        }    
+        }  
+        
+    // activateAutoclicker(){
+    //     if(this.numAutoClickers >= 1){
+    //         setInterval(() => {
+    //             this.numDonuts += this.numDonuts + (this.numMultipliers * this.numAutoClickers);
+                    
+    //             }, 1000);
+                 
+    //         }
+    //     }
 
     getTotalMultipliers(){
         return this.numMultipliers;
         }
 
-    addDonutMultiplier(){
-        if(this.numDonuts >=this.multiplierCost){
-            this.numDonuts -=this.multiplierCost;
-            this.numMultipliers ++;
-            }
-        if(this.addDonutMultiplier >1){
-            this.multiplierCost = this.multiplierCost*1.1
-            }
-        }
-
-    increaseNumberOfDonutsWithMultiplier(){
-        this.numDonuts = this.numDonuts*1.2**this.numMultipliers
-    }
-
-    
+   
+          
     getMultiplierCost(){
-        return this.multiplierCost 
+        return this.multiplierCost*1.1
         }
 
     }
