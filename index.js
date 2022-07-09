@@ -98,11 +98,12 @@ function runGame(){
                 createUser.addDonutMultiplier()
                 updateDonutCount(numDonuts,createUser)
                 updateMultiplierCount(numMultipliers, createUser)
+                updateMultiplierCost(multipliersCost, createUser)
             })
 
-        const valueForEachClick = (userClick, createUser)  
-            createUser.calculatingValuePerClick()
-            updateValuePerClick(userClick, createUser)
+        // const valueForEachClick = (userClick, createUser)  
+        //     createUser.calculatingValuePerClick()
+        //     updateValuePerClick(userClick, createUser)
 
         const costsForAutoClickers = (numAutoClickers, createUser)
             createUser.getCostAutoClicker()

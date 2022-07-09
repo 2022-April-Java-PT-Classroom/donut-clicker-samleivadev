@@ -45,7 +45,7 @@ class DonutMaker {
             this.numDonuts -=this.multiplierCost;
             this.numMultipliers ++;
             this.increaseMultiplierCost()
-            this.increaseNumberOfDonutsWithMultiplier()
+            // this.increaseNumberOfDonutsWithMultiplier()
                 
             }
         }
