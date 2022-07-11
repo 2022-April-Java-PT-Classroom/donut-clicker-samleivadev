@@ -4,10 +4,111 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Donut Clicker</title>
+    <script src="https://kit.fontawesome.com/fe218fcd2e.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container"></div>
+    <header>
+      <h1>Best Game <span>ever</span>  <i class="fa-solid fa-gamepad"></i></h1>
+    </header>
+    <div class="gameboard">
+      <div class="navigation">
+        <i class="fa-solid fa-cookie"></i>
+
+        <p></p>
+        <input tye="text" id="name" placeholder="NickName">
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+
+        <h2>Controls</h2>
+
+        <div class="controls">
+          <button id="addDonutBtn">Make one Donut</button>
+          <button id="addAutoClickerBtn" >Add Auto Clicker</button>
+          <button id="addMultiplierBtn" >Add Multiplier</button>
+        </div>
+
+        
+
+
+      </div>
+      <div class="main">
+        <div class="title">
+          <h1>Donut Clicker Game</h1>
+        </div>
+        <div class="container">
+          
+          <div class="user">
+            <h2 id="userName"></h2>
+          </div>
+
+          <div class="numbers">
+            <div>
+              <p>Total Donuts</p>
+              <section id="numDonuts">0</section>
+            </div>
+            <div>
+              <p>Total AutoClicks</p>
+              <section id="numAutoClikers">0</section>
+            </div>
+            <div>
+              <p>Total Multipliers</p>
+              <section id="numMultipliers">0</section>
+            </div>
+            
+          </div>
+        </div>
+        <h2>Purchase Options:</h2>
+        <div class="costs">
+          <div>
+            <p>Autoclicker cost:</p>
+            <section id="costAutoclicker">0</section>
+          </div>
+          <div>
+            <p>Multiplier Cost:</p>
+            <section id="costMultiplier">0</section>
+          </div>
+          
+          
+        </div>
+
+
+      </div>
+      <div class="scores">
+        <h2>Level</h2>
+          <div id="levelstatus">1</div>
+          <h2>Rates</h2>
+          <div>
+            <p>Value of each click</p>
+            <div id="valueperclick">1</div>
+          </div>
+          <div>
+            <p>Number of Clicks</p>
+            <div class="expovalue">Calculating...</div>
+          </div>
+          
+      </div>
+    </div>
+   
+
     <script src="./index.js"></script>
   </body>
+  <footer>
+    <h3>Created by Samuel Leiva</h3>
+    <div class="tech">
+    <p>Skills used in this project</p>
+    <ul>
+      <li><i class="fa-regular fa-square-check"></i> TDD</li>
+      <li><i class="fa-brands fa-js"></i> JavaScript</li>
+      <li><i class="fa-solid fa-object-group"></i> OPP</li>
+      <li><i class="fa-brands fa-css3"></i> CSS</li>
+    </ul>
+  </div>
+    <div class="social">
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-linkedin"></i>
+     
+    </div>
+  </footer>
 </html>

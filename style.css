@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    margin: 20px;
+    background-color:white;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #f56200;
+    text-align: center;
+    font-size: 20px;
+}
+span{
+    color: #db0a81;
+    text-transform: uppercase;
+}
+.gameboard{
+    padding: 10px 15px;
+    margin: 0 auto;
+    display: flex;
+    height: 100%;
+   
+}
+
+
+.gameboard .navigation{
+    display: flex;
+    flex-direction: column;
+    border: #f56200;
+    border-style: solid;
+    border-radius: 15px;
+    width: 15%;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    
+}
+.gameboard .navigation .fa-solid{
+    align-self: center;
+    padding-top: 15px;
+    font-size: 100px;
+    color:#db0a81;
+    padding-bottom: 25px;
+    
+  
+}
+
+.gameboard .navigation #start {
+    background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  /* text-decoration: none; */
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.gameboard .navigation #name{
+    padding: 10px 40px;
+    margin-bottom: 15px;
+}
+
+.gameboard .navigation #reset {
+    background-color: red; 
+    border: none;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.gameboard .navigation .controls #addDonutBtn {
+    background-color: #db0a81; 
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+.gameboard .navigation .controls #addAutoClickerBtn {
+    background-color: #db0a81; 
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.gameboard .navigation .controls #addMultiplierBtn {
+    background-color: #db0a81; 
+  border: none;
+  color: white;
+  padding: 10px 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.gameboard .main .numbers{
+    display: flex;
+    color: #db0a81;
+    justify-content: space-around;
+    font-size: 200%;
+    border: #db0a81;
+    border-style: solid;
+    border-radius: 15px;
+}
+
+.gameboard .main .costs{
+    display: flex;
+    justify-content: space-around;
+    font-size: 200%;
+    border: #db0a81;
+    border-style: solid;
+    border-radius: 15px;
+    font-size: 20PX;
+    
+}
+
+.gameboard .navigation p{
+    margin-top: auto;
+    text-align: center;
+}
+.gameboard .main .numbers p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #db0a81;
+}
+
+.gameboard .main .numbers #numDonuts{
+    font-size: 50px;
+    font-weight: 600;
+        
+}
+
+.gameboard .main .numbers #numAutoClikers{
+    font-size: 50px;
+    font-weight: 600;
+        
+}
+
+.gameboard .main .numbers #numMultipliers{
+    font-size: 50px;
+    font-weight: 600;
+        
+}
+
+.gameboard .main .costs #costAutoclicker{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.gameboard .main .costs #costMultiplier{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.gameboard .main{
+    width: 70%;
+    border: #f56200;
+    border-style: solid;
+    border-radius: 15px;
+    width: 70%;
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+.gameboard .main .title{
+    margin-bottom: 30px;
+    color: #db0a81;
+}
+
+.gameboard .main .title{
+    margin-top: 40px;
+    color: #db0a81;
+}
+/* .gameboard .main .numbers{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+} */
+/* .gameboard .main .title select{
+    border: none;
+    font-size: 16px;
+    background-color: rgba( 0 0 0 / 0);
+} */ 
+
+.gameboard .scores {
+    
+    border: #f56200;
+    border-style: solid;
+    border-radius: 15px;
+    width: 15%;
+    margin-left: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    justify-content: space-around;
+    font-size: 150%;
+}
+
+.gameboard .scores #levelstatus {
+    font-size: 100px;
+    font-weight: 600;
+    
+}
+
+.gameboard .scores p {
+   color:#cf82ae;
+   font-size: 20px;
+   font-weight: 600;
+}
+
+footer{
+    display: flex;
+    color: aliceblue;
+    justify-content: space-evenly;
+    width: auto;
+    background-color: #51042f;
+}
+
+
+
+footer .social .fa-github{
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+footer .social .fa-github:hover{
+    color: #daa7c4;
+}
+
+footer .social .fa-linkedin{
+    
+    margin-top: 30px;
+    font-size: 50px;
+}
+
+footer .social .fa-linkedin:hover{
+    color:aqua
+}
+
+
