@@ -91,6 +91,7 @@ function runGame(){
                 updateDonutCount(numDonuts,createUser)
                 updateAutoClickerCount(numAutoClickers, createUser)
                 updateAutoClickerCost(autoClickerCost,createUser)
+                activateAutoClicker(numDonuts,numAutoClickers, createUser)
             })
 
         const makeMultiplierBtn = (multiplierBtn, numDonuts, numMultipliers, createUser)
@@ -116,7 +117,7 @@ function runGame(){
 
         const activateAutoClicker = setInterval(autoClick, 1000)  
         function autoClick() {
-            updateDonutCount(donutCount, createUser)
+            updateDonutCount(numDonuts, createUser)
             createUser.runAutoClicker()
             enableAutoClickerBtn()
             enableMultiplierBtn()
